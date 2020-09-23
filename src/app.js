@@ -13,8 +13,8 @@ const options = {
 
 
 mongoose.connect('mongodb://localhost/crud-mongo',options)
-.then(db => console.log("db conectada"))
-.catch(err => console.log("hubo un error"+err));
+	.then(db => console.log(`db conectada -> ${db}`))
+	.catch(err => console.log(`se presento el siguiente error -> ${err}`));
 
 const indexRoutes = require('./routes/index');
 
@@ -28,8 +28,6 @@ app.set('view engine', 'ejs');
 
 app.use('/',indexRoutes);
 
-app.listen(app.get('port'),hostname, ()=> {
-    console.log(`Server on port: ${app.get('port')}`);
-});
 
 module.exports = app;
+
