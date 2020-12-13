@@ -12,4 +12,7 @@ pull it on yor local repository
 git pull https://github.com/NahuelMolina/CRUD-mongodb.git boot_frontend
 ```
 This way, you can work on views folder and all changes you realize will would be saved
+## notes that i took
+* i should be used to set a mongodb model and the pobably relations in it
+* i gotta be more orginized in the creation of models and controllers functions
 ## Thanks for visiting
