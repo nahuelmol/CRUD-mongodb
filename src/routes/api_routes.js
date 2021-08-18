@@ -14,4 +14,18 @@ router.get('book/:bookId', (req,res) => {
         })
 });
 
+router.get('books/', (req,res) => {
+        if (req.status == 200){
+            const books = await Book.find({}).exec()
+            books && res.render('book-list',books)
+        };
+});
+
+router.get('authors/', (req,res) => {
+        if (req.status == 200){
+            const authors = await Author.find({}).exec()
+            authors && res.render('author-list',authors)
+        };
+});
+
 module.exports = router;
