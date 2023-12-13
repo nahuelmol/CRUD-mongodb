@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test":"mocha --reporter spec src/test/benchmarks/mongoBench"
+    "test": "mocha --reporter spec src/test/benchmarks/mongoBench"
   },
   "keywords": [],
   "author": "",

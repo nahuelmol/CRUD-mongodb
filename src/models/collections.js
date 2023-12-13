@@ -33,6 +33,6 @@ const books = new Schema({
     
 });
 
-exports.task = mongoose.model('Task',TaskSchema);
-exports.book = mongoose.model('Book collection',books);
-exports.author = mongoose.model('Author collection',authors);
+exports.Task = mongoose.model('Task',TaskSchema);
+exports.Book = mongoose.model('Book collection',books);
+exports.Author = mongoose.model('Author collection',authors);
