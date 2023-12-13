@@ -7,12 +7,18 @@ const TaskSchema = new Schema({
     status:{
         type:Boolean,
         default:false
-    }
+    },
+    author:String,
+    creation_date:String,
+    deadline:String
 });
 
 const authors = new Schema({
     name:String,
     ape:String,
+    age:Number,
+    stars:Number,
+    country:String,
     status:{
         type:Boolean,
         default:false
@@ -24,6 +30,10 @@ const authors = new Schema({
 const books = new Schema({
     title:String,
     year:String,
+    is_pdf:Boolean,
+    is_physic:Boolean,
+    gender:String,
+    priece:Number,
     status:{
         type:Boolean,
         default:false
