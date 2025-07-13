@@ -5,6 +5,6 @@
   <img src="https://img.shields.io/github/languages/top/nahuelmol/CRUD-mongodb"/>
 </div>
 
-That web app allow us to Insert, Read, Update and Delete information on our mongodb database
+Basic web app that allows to Create, Read, Update and Delete data in a mongodb database
 
 
