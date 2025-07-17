@@ -13,7 +13,7 @@ const TaskSchema = new Schema({
     deadline:String
 });
 
-const authors = new Schema({
+const AuthorSchema = new Schema({
     name:String,
     ape:String,
     age:Number,
@@ -27,7 +27,7 @@ const authors = new Schema({
     
 });
 
-const books = new Schema({
+const BookSchema = new Schema({
     title:String,
     year:String,
     is_pdf:Boolean,
@@ -44,5 +44,6 @@ const books = new Schema({
 });
 
 exports.Task = mongoose.model('Task',TaskSchema);
-exports.Book = mongoose.model('Book collection',books);
-exports.Author = mongoose.model('Author collection',authors);
+exports.Book = mongoose.model('Book collection', BookSchema);
+exports.Author = mongoose.model('Author collection', AuthorSchema);
+
